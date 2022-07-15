@@ -1,0 +1,39 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Be the Hero Documentation",
+    "description": ".",
+    "version": "1.0.0",
+    "contact": {
+      "email": "main.joaogabrielsg@gmail.com",
+      "name": "João Gabriel",
+      "url": "https://github.com/joaogabriel-sg"
+    }
+  },
+  "paths": {
+    "/": {
+      "get": {
+        "tags": ["Hello World"],
+        "summary": "Say Hello World",
+        "description": "Say Hello World",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
